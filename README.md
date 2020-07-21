@@ -7,12 +7,13 @@ If you want install many pnp4nagios, you can use this code to split nagios logs 
 This codes help you to use many pnp4nagios server at one time. Becuase pnp4nagios service get huge resources for 1000 server and more.
 
 ### Prerequisites
-```
-1.Install Nagios server.
-2.Install pnp4nagios servers.
-3.Install one server to manage all pnp4nagios server.
-4. Send service-perfdata and host-perfdata files to pnp4nagios manager server and delete from nagios.
-```
+
+
+* Install Nagios server.
+* Install pnp4nagios servers.
+* Install one server to manage all pnp4nagios server.
+* Send service-perfdata and host-perfdata files to pnp4nagios manager server and delete from nagios.
+
 ### Installing
 
 Nagios server:
