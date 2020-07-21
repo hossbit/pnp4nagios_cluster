@@ -63,14 +63,8 @@ create cron for this file to run every 10 minutes.
 
 ## Authors
 
-* **Mir Hamed** - *Initial work* - [PurpleBooth](https://github.com/hossbit)
+* **Mir Hamed** - *Initial work* - [Hossbit](https://github.com/hossbit)
 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
