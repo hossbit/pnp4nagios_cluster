@@ -49,11 +49,16 @@ command_line /usr/local/nagios/etc/objects/create script to mv file with some ra
 {
 ```
 
-For example this script must move files to this path /log/perfdata/
+* Add nagios server SSH key to pnp4nagios manager server.
+
+* Add pnp4nagios manager server SSH key to pnp4nagios server and nagios server.
+
 
 Pnp4nagios manager server:
 
 create cron for this file to run every 10 minutes.
+
+For example this script must move files to this path /log/perfdata/
 
 ```
 */10 * * * * /path/to/pdatasplit.sh
