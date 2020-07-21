@@ -51,14 +51,15 @@ command_line /usr/local/nagios/etc/objects/create script to mv file with some ra
 
 Edit sever cfg file in nagios server:
 
+```
 define host{
 host_name testserver
 alias testserver
 address 0.0.0.0
 contact_groups admins
-```
+
 _pnpserver 0.0.0.0
-```
+
 }
 
 define serviceextinfo{
@@ -67,14 +68,12 @@ service_description PING
 action_url
 /pnp4nagios/index.php/graph?host=$HOSTNAME$&srv=$SERVICEDESC$&view=1
 }
-
 ```
 
 * Add nagios server SSH key to pnp4nagios manager server.
 
 * Add pnp4nagios manager server SSH key to pnp4nagios server and nagios server.
 
-```
 
 Pnp4nagios manager server:
 
