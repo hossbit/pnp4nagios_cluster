@@ -7,24 +7,22 @@ If you want install many pnp4nagios, you can use this code to split nagios logs 
 This codes help you to use many pnp4nagios server at one time. Becuase pnp4nagios service get huge resources for 1000 server and more.
 
 ### Prerequisites
-
+```
 1.Install Nagios server.
 2.Install pnp4nagios servers.
 3.Install one server to manage all pnp4nagios server.
 4. Send service-perfdata and host-perfdata files to pnp4nagios manager server and delete from nagios.
-
 ```
-Give examples
-```
-
 ### Installing
 
 Nagios server:
 
+```
 1. Edit file /usr/local/nagios/etc/nagios.cfg and this pnp tag to end of the line.
 
 service_perfdata_file_template=DATATYPE::********$\tPNPIP::$_HOSTPNPSERVER$
-
+```
+```
 2. Edit file /usr/local/nagios/etc/objects/commands.cfg
 
 comment this line:
@@ -48,18 +46,10 @@ define command}
 command_name mv-service-perfdata-file
 command_line /usr/local/nagios/etc/objects/create script to mv file with some random number.sh
 {
+```
 
 For example this script must move files to this path /log/perfdata/
 
-```
-Give the example
-```
-
-And repeat
-
-```
-until finished
-```
 
 End with an example of getting some data out of the system or using it for a little demo
 
